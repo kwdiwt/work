@@ -1,5 +1,7 @@
 TERM=xterm-256color
 
+export PATH=/root/.local/bin:$PATH
+
 alias ..='cd ..'
 alias ...='cd ..;cd ..'
 alias ls='ls --color=auto'
