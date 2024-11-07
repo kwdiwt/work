@@ -1,3 +1,5 @@
+TERM=xterm-256color
+
 alias ..='cd ..'
 alias ...='cd ..;cd ..'
 alias ls='ls --color=auto'
