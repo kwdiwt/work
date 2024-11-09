@@ -1,5 +1,6 @@
 TERM=xterm-256color
 
+# pdm
 export PATH=/root/.local/bin:$PATH
 
 alias ..='cd ..'
