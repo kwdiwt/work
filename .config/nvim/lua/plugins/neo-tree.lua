@@ -11,6 +11,9 @@ return {
               "__pycache__",
             },
           },
+        },
+        window = {
+          width = 30
         }
       })
     end,
