@@ -1,9 +1,12 @@
-# 工作环境
-基于archlinux的docker容器
+# work
+基于archlinux镜像的docker容器工作环境。
 
-### 一键生成容器 
+### 生成环境
 ```bash
 # XXX git用户名
 # XXX@xxx.com git邮箱名
-docker build --build-arg NAME=XXX --build-arg EMAIL=XXX@xxx.com -t work --output . .
+docker build \
+  --build-arg NAME=XXX \
+  --build-arg EMAIL=XXX@xxx.com \
+  -t work .
 ```
