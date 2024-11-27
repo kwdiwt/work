@@ -25,5 +25,5 @@ RUN sed -i '/en_US.UTF-8/s/^#//g' /etc/locale.gen && \
     rm -rf ~/.config/nvim/.git && \
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-COPY .config/nvim/lua/plugins/neo-tree.lua /root/.config/nvim/lua/plugins/
+COPY .config/nvim/lua/plugins/* /root/.config/nvim/lua/plugins/
 COPY .local/bin/sw /root/.local/bin/
