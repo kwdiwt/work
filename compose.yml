@@ -1,0 +1,10 @@
+services:
+  work:
+    image: web
+    build:
+      context: .
+      args:
+        NAME: XXX
+        EMAIL: XXX@xxx.com
+    extra_hosts:
+      - "raw.githubusercontent.com:199.232.68.133"
