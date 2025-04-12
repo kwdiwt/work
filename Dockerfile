@@ -11,7 +11,6 @@ ARG NAME
 ARG EMAIL
 RUN sed -i '/en_US.UTF-8/s/^#//g' /etc/locale.gen && \
   locale-gen && \
-  (curl -sSL https://pdm-project.org/install-pdm.py | python3 -) && \
   git config --global user.email "${EMAIL}" && \
   git config --global user.name "${NAME}" && \
   git clone --depth 1 https://github.com/LazyVim/starter ~/.config/nvim && \
@@ -22,5 +21,5 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-COPY .config/nvim/lua/plugins/* /root/.config/nvim/lua/plugins/
-COPY .local/bin/sw /root/.local/bin/
+COPY .config/nvim/lua/plugins/* .config/nvim/lua/plugins/
+COPY .local/bin/sw .local/bin/
