@@ -15,6 +15,14 @@ return {
 				sources = {
 					files = {
 						ignored = true,
+						exclude = {
+							"logs",
+						},
+					},
+					grep = {
+						exclude = {
+							"logs",
+						},
 					},
 					explorer = {
 						layout = {
